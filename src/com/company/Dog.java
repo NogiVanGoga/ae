@@ -2,10 +2,14 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Dog {
-    static void display(){
-        Scanner sc = new Scanner(System.in);
-        String dog = sc.nextLine();
-        System.out.println("Собаку зовут - " + dog);
+public class Dog extends Animal{
+    String d;
+    Dog(){
+        d="Барбоскин";
+    }
+
+    @Override
+    void makeSound() {
+        System.out.println("Гав " + d);
     }
 }

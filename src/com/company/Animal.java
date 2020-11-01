@@ -1,2 +1,8 @@
-package com.company;public class Animal {
+package com.company;
+
+import java.util.Scanner;
+
+abstract class Animal {
+    void makeSound() {
+    }
 }
